@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="website icon" type="png" href="image/heart.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Have a Happy Birthday!</title>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+            <source src="blue (instrumental).mp3" type="audio/mp3">
+        </audio>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let audio = document.getElementById("bg-music");
+        
+                // Try playing audio in the background without user interaction
+                audio.play().catch(error => {
+                    console.log("Autoplay blocked. Waiting for user interaction.");
+                    document.addEventListener("click", () => audio.play(), { once: true });
+                });
+            });
+        </script>
+
+    <div class="container">
+        <div class="boxcontainer">
+            <div class="image">
+                <img src="flag.png" alt="">
+            </div>
+            <div class="text-happybirthday">
+                <img src="texthappy.png" alt="">
+            </div>
+            <div class="cake">
+                <img src="cake.png" alt="">
+            </div>
+            <div class="box-balloon">
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+                <div class="balloon-item1">
+                    <img src="balloon.png" alt="">
+                </div>
+            </div>
+            <div class="box-cloud">
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+                <div class="cloud">
+                    <img src="cloud.png" alt="">
+                </div>
+            </div>
+            <div class="box-firework">
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+                <div class="firework">
+                    <img src="firework.png" alt="">
+                    <img src="firework1.png" alt="" id="firework1">
+                </div>
+            </div>
+            <div class="paperCannons">
+                <img src="paperCannons1.png" alt="">
+            </div>
+            <div class="box-giftbox">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+                <img src="giftbox.png" alt="">
+            </div>
+            <div class="mail">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="boxcute">
+                <div class="cute1">
+                    <img src="cute.png" alt="">
+                </div>
+                <div class="cute2">
+                    <img src="cute.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <div class="userImg">
+                        <img src="Screenshot_2024_1004_084424.jpg" alt="">
+                    </div>
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>To You!</h3>
+                        <h2>
+                            Hey wish you happy birthday to you 🎉🎈 and ne epavum un life la happy ya irukanum un aasa Ellam nadakkanum intha naal ne ala kudathu and ne epavum happy ya irukanum da ❤️ 
+                            ithuku munnati un b-day epdi irunthuchunu theriyala but ithu unaku putikum nu nenaikiren 😅 ne rare da un value therinchavanga kitta iru
+                            ,brave and strong aah iru enjoy yor life 🎉🎈 once again happy birthday 🎈🎂
+                        </h2>
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+	<div id="copy">
+		<p class="text-center text-white text-sm">KIDDO <a
+			href="https://www.instagram.com/aoudumber.dev/reels/#"></a></p>
+	  </div>
+          <!-- Mute Button -->
+    <button id="muteButton" class="mute-button">🔊</button>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("bg-music");
+            let muteButton = document.getElementById("muteButton");
+            
+            muteButton.addEventListener("click", function () {
+                if (audio.muted) {
+                    audio.muted = false;
+                    muteButton.textContent = "🔊";
+                } else {
+                    audio.muted = true;
+                    muteButton.textContent = "🔇";
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .mute-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .mute-button:hover {
+            background-color: #e91e63;
+        }
+    </style>
+</body>
+</html>
+<!-- Click Button at Bottom Left Corner -->
+<button id="openWebsite" class="click-button">Click Me</button>
+
+<script>
+    document.getElementById("openWebsite").addEventListener("click", function() {
+        window.open("https://67cfbe1de2ca8.site123.me/", "_blank"); // Change URL as needed
+    });
+</script>
+
+<style>
+    .click-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .click-button:hover {
+        background-color: #e91e63;
+    }
+</style>
+</body>
+    <script>
+        document.addEventListener('mousemove', function(e){
+            let body = document.querySelector('body');
+            let heart = document.createElement('span');
+            let x = e.offsetX;
+            let y = e.offsetY;
+            heart.style.left = x+'px';
+            heart.style.top = y+'px';
+
+            let size = Math.random() * 10;
+            heart.style.width = 4 * size+'px';
+            heart.style.height = 4 * size+'px';
+
+            let transformValue = Math.random() * 360;
+            heart.style.transform = 'rotate('+ transformValue +'deg)';
+
+            body.appendChild(heart);
+
+            setTimeout(function(){
+                heart.remove();
+            },1000)
+        })
+
+        let mailBox = document.querySelector('.mail')
+        let boxmail = document.querySelector('.boxMail')
+        var close = document.querySelector('.fa-xmark')
+        mailBox.onclick = function(){
+            mailBox.classList.toggle('active')
+            boxmail.classList.add('active')
+        }
+
+        close.addEventListener('click', function(){
+            boxmail.classList.remove('active')
+        })
+    </script>
+</html>
